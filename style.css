@@ -50,6 +50,10 @@ body{
     padding: 1em;
 }
 
+.task-done{
+    text-decoration: line-through;
+}
+
 .check-button{
   background: linear-gradient(to bottom right, #94eda4, #bfeaba);
   border: 0;
