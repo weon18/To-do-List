@@ -1,53 +1,93 @@
 body{
     margin: 0;
-    background-image: url('background.png');
+    background-image: url('다운로드.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .container{
-    background-color: rgba(245, 245, 245, 0.878);
+    background-color: rgba(183, 182, 182, 0.878);
     min-height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    box-shadow: rgba(129, 126, 126, 0) 0px 2px 4px 0px, rgb(244, 245, 246) 0px 2px 16px 0px;
     margin-top: 3vh;
     margin-bottom: 3vh;
     border: 0;
     border-radius: 5vh;
+    position: relative;
 }
 
 .title{
-    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
     font-family: Georgia, serif;
+    font-size: 300%;
+}
+
+.input-area{
+    display: flex;
+    justify-content: center;
+}
+
+#add-button {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#add-button:hover {
+    background-color: #ddd;
+    color: #555;
+    border-color: #ccc;
 }
 
 .task-area{
-    border: 1px solid lightgray;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .task-tabs{
     display: flex;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid rgb(58, 56, 56);
     position: relative;
 }
 
 .task-tabs div{
     padding: 1em;
+    cursor: pointer;
 }
 
 #under-line{
-    height: 4px;
-    background-color: rgb(233, 181, 198);
+    height: 5px;
+    background-color: rgba(85, 81, 81, 0.76);
     position: absolute;
     width: 65px;
     left: 0px;
-    top: 52px;
+    top: 51px;
     padding: 0px;
+    transition: transform 0.3s ease, width 0.3s ease;
 }
 
 .task{
     display: flex;
     justify-content: space-between;
     padding: 1em;
+}
+
+#task-input {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+    box-sizing: border-box;
+    font-size: 14px;
 }
 
 .task-done{
